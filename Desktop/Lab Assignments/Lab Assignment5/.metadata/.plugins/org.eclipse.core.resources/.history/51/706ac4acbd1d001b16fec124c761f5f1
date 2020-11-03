@@ -1,0 +1,22 @@
+package ValidateAge;
+
+public class ValidateAge1 {
+	public static void main(String args[]) {
+		ValidateAge1 le1 = new ValidateAge1();
+		try {
+			System.out.println(le1.validateAge(16));
+			System.out.println(le1.validateAge(12));
+		}
+		catch(InvalidAgeException e) {
+			System.out.println(e);
+		}
+	}
+	public int validateAge(int age) throws InvalidAgeException {
+		if(age<=15) {
+			throw new InvalidAgeException("Age should be greater than 15");
+		}
+		else
+			System.out.println("Age is valid");
+		return age;
+	}
+} 
