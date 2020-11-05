@@ -1,5 +1,0 @@
-package ValidateAge;
-
-public class InvalidAgeException {
-
-}
